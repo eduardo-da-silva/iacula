@@ -1,4 +1,4 @@
-# timer-vue
+# iacula
 
 ## Project setup
 ```
