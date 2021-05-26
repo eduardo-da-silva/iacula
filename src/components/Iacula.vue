@@ -12,7 +12,6 @@
 <script>
 const { ipcRenderer } = require("electron");
 const product = require("../../setences.json");
-
 import { mapState } from "vuex";
 
 export default {
@@ -32,7 +31,7 @@ export default {
   },
   watch: {
     image() {
-      const sound = new Audio(require("../../public/sound.wav"));
+      const sound = new Audio("./assets/sound.wav");
       sound.play();
       this.currentIacula = this.product[this.day - 1].iaculas[
         Math.floor(Math.random() * this.product[this.day - 1].iaculas.length)

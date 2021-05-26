@@ -3,5 +3,5 @@ import { iacula } from './iacula'
 
 export default {
     // template,
-    iacula
+    iacula,
 }

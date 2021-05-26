@@ -8,6 +8,7 @@ const iacula = global.share.ipcMain.on('getImages', (e, dayOfWeek) => {
     e.returnValue = relDir + chosenFile
 })
 
+
 export default {
     iacula
 }

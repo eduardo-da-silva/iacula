@@ -3,8 +3,13 @@
 import { app, protocol, BrowserWindow, Tray, Menu, ipcMain } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
+import { autoUpdater } from "electron-updater"
+
+
 import path from 'path'
 import config from './config'
+
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Scheme must be registered before the app is ready
@@ -15,14 +20,14 @@ protocol.registerSchemesAsPrivileged([
 const iconPath = path.join(__static, 'assets/pray.png')
 const contextMenu = Menu.buildFromTemplate([
   {
-    label: 'Sair', click: () => {
-      app.isQuiting = true
-      app.quit()
+    label: 'Configurações', click: () => {
+      navigate({ name: 'Settings' })
     }
   },
   {
-    label: 'Configurações', click: () => {
-      navigate({ name: 'Settings' })
+    label: 'Sair', click: () => {
+      app.isQuiting = true
+      app.quit()
     }
   }
 ])
@@ -82,6 +87,7 @@ async function createWindow() {
     mainWindow.setMenu(null)
   }
   await mainWindow.loadURL(winURL)
+  autoUpdater.checkForUpdatesAndNotify()
 }
 
 // Quit when all windows are closed.
