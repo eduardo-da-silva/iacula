@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# iacula :pray:	
 
-You can use the [editor on GitHub](https://github.com/eduardo-da-silva/iacula/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+This is an application that aims to help keeping God's presence. In short, the application presents, in customizable time intervals, short sentences for prayer (known as jaculatory). Also, images are presented that help elevate the soul in prayer.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The jaculatories are organized by days, according to traditional days of devotion in the Catholic Church, as follows:
 
-### Markdown
+- **Sunday**: Holy Trinity
+- **Mondays**: Souls in purgatory
+- **Tuesdays**: Holy Angels
+- **Wednesdays**: St. Joseph
+- **Thursdays**: Blessed Sacrament
+- **Fridays**: Passion of the Christ
+- **Saturdays**: Our Lady
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## How to use it
 
-```markdown
-Syntax highlighted code block
+### Instalation 
+You can install any package available on the [releases links](https://github.com/eduardo-da-silva/iacula/releases). Also, it is possible to download and execute it locally using NodeJs.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/eduardo-da-silva/iacula/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Settings
+After the instalation, you can invoke the application and run it on your operating system. In the tray icons bar (in general it was close to the system clock), it will be shown the following application icon <img src="https://github.com/eduardo-da-silva/iacula/blob/main/build/icons/icon.png" alt="drawing" width="20"/>. On clicking it, you will be able to quit or to setting up the application.
